@@ -4,5 +4,5 @@ def reverse_each_word(str)
   str.each do |e|
     new = new +' '+e.reverse
   end
-  return new
+  return new.strip
 end
