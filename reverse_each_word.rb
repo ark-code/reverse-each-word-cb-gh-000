@@ -1,7 +1,12 @@
 
 def reverse_each_word(str)
   str = str.split(' ')
-  str.collect do |e|
+  new=''
+  arr=str.collect do |e|
     e.reverse
   end
+  arr.each do |e|
+    new = new + ' '+e
+  end
+  return new.strip
 end
